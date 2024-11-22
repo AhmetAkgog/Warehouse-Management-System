@@ -28,7 +28,7 @@ class TrendyolAPIApp(QWidget):
 
         # Dropdown menu for API Key and Seller ID
         self.api_dropdown = QComboBox(self)
-        self.api_dropdown.addItem("Velours Violet")  # The name that will be displayed in the dropdown
+        self.api_dropdown.addItem("Store Name")  # The name that will be displayed in the dropdown
         self.api_dropdown.addItem("Another Seller")  # You can add other sellers here as needed
         self.form_layout.addWidget(self.api_dropdown)
 
@@ -58,8 +58,8 @@ class TrendyolAPIApp(QWidget):
         selected_option = self.api_dropdown.currentText()
 
         if selected_option == "Velours Violet":
-            api_key = "alJxU3VMSDhYTmZ3NFhlSXhCOWc6b0xITG9ocjU2Z0NjZ25Hd1ppVGI="
-            seller_id = "595149"
+            api_key = "YOURAPIKEY"
+            seller_id = "YOURSELLERID"
         else:
             # You can handle other sellers here if you add more items to the dropdown
             QMessageBox.critical(self, "Error", "Selected option is not available.")
